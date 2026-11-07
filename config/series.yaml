@@ -1,0 +1,18 @@
+# Series de ParchanCol (estructura fija = identidad de marca). Sale de CLAUDE.md.
+porque:
+  nombre: "¿Por qué…?"
+  sello: "¿POR QUÉ?"
+  duracion: [30, 45]
+  estructura: [gancho, golpe_1, golpe_2, golpe_3, giro, cierre]
+
+mito_o_dato:
+  nombre: "Mito o dato"
+  sello: "¿MITO O DATO?"
+  duracion: [20, 35]
+  estructura: [creencia, veredicto, evidencia, fuente, cierre]
+
+en_60s:
+  nombre: "En 60 segundos"
+  sello: "EN 60 SEGUNDOS"
+  duracion: [50, 90]
+  estructura: [contexto, lo_que_nadie_te_cuenta, que_significa_para_ti, cierre]

@@ -1,0 +1,49 @@
+# Marca ParchanCol — lo leen todos los scripts. Sale de CLAUDE.md.
+nombre: ParchanCol
+frase_cierre: "Y ahora ya sabes, parce."
+
+paleta:
+  fondo: "#14161A"      # carbón
+  acento: "#FFC832"     # amarillo: palabra clave
+  mito: "#E8505B"       # coral
+  dato: "#2F6BFF"       # azul
+  texto: "#F7F4EE"      # blanco hueso
+
+fuentes:
+  titulos: assets/fonts/ArchivoBlack-Regular.ttf      # títulos y sellos
+  subtitulos: "assets/fonts/Inter[opsz,wght].ttf"     # fuente variable (todos los grosores)
+  subtitulos_grosor: SemiBold                         # grosor que usa Pillow dentro de la fuente variable
+  subtitulos_ass: "Inter SemiBold"                    # libass usa Inter-SemiBold.ttf estática (rsms/inter 4.1)
+  carpeta: assets/fonts
+
+formato:
+  ancho: 1080
+  alto: 1920
+  fps: 30
+
+# Zonas donde las apps ponen botones: ahí no va nada importante.
+zonas_seguras:
+  inferior: 0.20   # 20 % de abajo
+  derecha: 0.15    # 15 % de la derecha
+
+subtitulos:
+  tamano: 88
+  borde: 7
+  altura: 0.62          # centro de los subtítulos, como fracción de la altura
+  max_palabras: 3       # palabras por grupo en pantalla
+
+cierre:
+  segundos: 2           # tarjeta con logo después de la voz
+
+voz:
+  idioma: es
+  exageracion: 0.5      # expresividad de Chatterbox (0.25–1.0)
+  cfg: 0.5              # 0.5 = ritmo normal; más bajo = más lento y calmado
+  temperatura: 0.8
+  semilla: 42           # misma semilla = misma voz en cada ejecución
+  pausa_corta: 0.30     # segundos de silencio por cada [pausa]
+  pausa_bloque: 0.35    # silencio entre bloques B1..B6
+
+audio:
+  lufs: -14
+  pico_maximo: -1.5
