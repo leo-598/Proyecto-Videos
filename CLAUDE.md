@@ -72,6 +72,14 @@ Semáforo verde, amarillo o rojo; ante la duda, el más restrictivo.
 - **Afiliados y patrocinios:** siempre declarados como publicidad.
 - **Errores:** comentario fijado con la corrección, o borrar el video si el error es grave. Todo queda en `logs/correcciones.md`.
 
+## Videos de caricatura
+
+- Videos de caricatura → usar `/video-cartoon videos/<carpeta>`; `motor/v1/` está congelado (no se lee ni se edita en sesiones de video).
+  Solo se escriben `story.js`, `sonidos.json` y, si hace falta, escenarios nuevos en `motor/biblioteca/`. Guía: `motor/GUIA_MOTOR.md`.
+- Excepción de formato: los videos de caricatura **no llevan sello de serie ni tarjeta de cierre con el logo** (decisión del dueño,
+  2026-11-07); solo subtítulos. Voz: Kokoro `em_alex` (Apache 2.0) vía sherpa-onnx 1.13.8.
+- Cambios al motor: sesión aparte, en una copia `motor/v1.1/`, con aprobación del dueño.
+
 ## Estructura de carpetas
 
 ```

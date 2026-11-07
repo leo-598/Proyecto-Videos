@@ -1,0 +1,10 @@
+# Dependencias del .venv (Python 3.11, manejado con uv)
+# Instalar:  uv pip install --python .venv\Scripts\python.exe -r requirements.txt
+#
+# Versiones fijas. No actualizar sin probar la voz en español.
+chatterbox-tts==0.1.7      # voz clonada del dueño (MVP), MIT
+faster-whisper==1.2.1      # tiempos por palabra, MIT
+numpy==1.26.4              # audio del motor, BSD-3
+# sherpa-onnx 1.13.8 FIJO: la 2.x quitó espeak de Kokoro y lee mal el español (ver docs/INSTALADO.md)
+sherpa-onnx==1.13.8        # Kokoro TTS, Apache-2.0
+sherpa-onnx-core==1.13.8

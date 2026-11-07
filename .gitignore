@@ -13,3 +13,17 @@ videos/**/*.mp4
 videos/**/visuales/
 videos/**/tiempos.json
 videos/**/subtitulos.ass
+
+# Motor de caricatura (Etapa 1)
+entrada/
+node_modules/
+motor/modelos/
+motor/pruebas/
+
+# Cuadros e intermedios del render. El video terminado va en videos/<slug>/final.mp4
+# (fuera de out/) y SÍ se sube al repo.
+videos/*/out/
+videos/*/frames/
+videos/*/work/
+motor/**/out/
+!videos/*/final.mp4
