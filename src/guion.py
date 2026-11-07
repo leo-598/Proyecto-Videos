@@ -37,8 +37,10 @@ def leer(carpeta):
         texto = b.pop("texto").strip()
         # Frases separadas por [pausa]; sin asteriscos para la voz
         b["frases"] = [f.replace("*", "").strip() for f in texto.split("[pausa]") if f.strip()]
-        # Palabras con su marca de énfasis (para subtítulos)
+        # Palabras con su marca de énfasis y el número de frase (para tiempos y subtítulos)
         b["palabras"] = []
-        for token in texto.replace("[pausa]", " ").split():
-            b["palabras"].append({"texto": token.replace("*", ""), "enfasis": "*" in token})
+        trozos = [f for f in texto.split("[pausa]") if f.strip()]
+        for n_frase, trozo in enumerate(trozos):
+            for token in trozo.split():
+                b["palabras"].append({"texto": token.replace("*", ""), "enfasis": "*" in token, "frase": n_frase})
     return bloques

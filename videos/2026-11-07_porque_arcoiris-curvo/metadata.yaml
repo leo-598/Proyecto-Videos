@@ -2,11 +2,35 @@ id: 2026-11-07_porque_arcoiris-curvo
 pilar: P3
 serie: porque
 carril: base
-estado: guion_aprobado  # idea → guion_aprobado → voz → render → revisado → programado → publicado
-etiqueta_ia: revisar  # visuales gráficos (no realistas); voz sintética: declarar si la plataforma lo pregunta
+estado: render  # idea → guion_aprobado → voz → render → revisado → programado → publicado
+etiqueta_ia: voz_sintetica  # aprobado 2026-11-07: visuales gráficos (no realistas); la voz es sintética (Chatterbox, sin marca de agua) -> declararla cuando la plataforma lo pregunte
 afiliados: []
+# Textos por plataforma: PROPUESTA de Claude, pendiente de aprobación del dueño en el CONTROL 2.
+textos_aprobados: no
 plataformas:
-  youtube:   {titulo: "", descripcion: ""}
-  tiktok:    {texto: ""}
-  instagram: {texto: ""}
-  facebook:  {texto: ""}
+  youtube:
+    titulo: "¿Por qué el arcoíris es curvo? En realidad es un círculo"
+    descripcion: |
+      El arcoíris no es un arco: es un círculo completo. En menos de 40 segundos te contamos por qué lo ves curvo, qué tienen que ver los 42 grados y por qué cada persona ve su propio arcoíris.
+
+      Fuentes:
+      - Met Office, "Rainbows": https://weather.metoffice.gov.uk/learn-about/weather/optical-effects/rainbows
+      - HyperPhysics (Georgia State University), "Primary Rainbow": https://hyperphysics.gsu.edu/hbase/atmos/rbowpri.html
+      - ASU PHS208, "Rainbows": https://www.asu.edu/courses/phs208/patternsbb/PiN/mod/light/opticsnature/bow.html
+      - BBC Science Focus, "Why do millions of raindrops only make one rainbow?": https://www.sciencefocus.com/science/why-do-millions-of-raindrops-only-make-one-rainbow
+
+      #Shorts #ciencia #arcoiris
+  tiktok:
+    texto: "Spoiler: el arcoíris no es un arco 🌈 Y desde un avión se puede ver completo. #ciencia #arcoiris #sabiasque #datoscuriosos"
+  instagram:
+    texto: |
+      Ese arco que ves después de la lluvia es solo la mitad de la historia. El arcoíris es un círculo, y el tuyo es solo tuyo: la persona de al lado ve otro, hecho con otras gotas. Guárdalo para la próxima vez que llueva 🌧️
+
+      Fuentes: Met Office · HyperPhysics (GSU) · ASU
+
+      #ciencia #arcoiris #datoscuriosos #fisica
+  facebook:
+    texto: |
+      ¿Alguna vez te preguntaste por qué el arcoíris siempre sale curvo? La respuesta está en un ángulo de unos 42 grados y en la sombra de tu cabeza. Mira el video y cuéntanos: ¿alguna vez has visto un arcoíris desde un avión?
+
+      Fuentes: Met Office, HyperPhysics (Georgia State University) y Arizona State University.

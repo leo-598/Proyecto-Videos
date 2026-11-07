@@ -91,6 +91,8 @@ class Lienzo:
                        width=max(1, round(self.s(ancho))) if ancho else 0)
 
     def arco(self, c, r, a0, a1, color, ancho):
+        if a1 - a0 >= 359.5:   # círculo completo: sin costura donde se unen las puntas
+            a0, a1 = 0, 360
         if a1 <= a0:
             return
         x, y = self.p(*c)

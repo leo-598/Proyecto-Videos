@@ -43,6 +43,8 @@ voz:
   semilla: 42           # misma semilla = misma voz en cada ejecución
   pausa_corta: 0.30     # segundos de silencio por cada [pausa]
   pausa_bloque: 0.35    # silencio entre bloques B1..B6
+  intentos: 4           # máximo de veces que se regenera una frase que no suena igual al guion
+  parecido_minimo: 0.90 # 0..1: qué tanto deben coincidir las palabras oídas por Whisper con el guion
 
 audio:
   lufs: -14

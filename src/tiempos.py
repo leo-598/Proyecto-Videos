@@ -2,8 +2,8 @@
 
 Whisper escucha voz.wav y da el momento de cada palabra. El texto oficial es el del guion:
 la transcripción solo se usa para saber CUÁNDO suena cada palabra del guion.
-- Los bloques B1..B6 vienen exactos de voz_bloques.json (los marcó la etapa de voz).
-- Dentro de cada bloque se emparejan las palabras del guion con las de Whisper.
+- Los bloques B1..B6 y cada frase vienen exactos de voz_bloques.json (los marcó la etapa de voz).
+- Dentro de cada frase se emparejan las palabras del guion con las de Whisper.
 - Las palabras que no coinciden (ej. "cuarenta y dos" escrito como "42") se reparten
   entre las palabras vecinas que sí coincidieron, según su largo.
 Guarda tiempos.json.
@@ -81,12 +81,16 @@ def generar(carpeta):
 
     salida = {"duracion_voz": voz["duracion"], "bloques": voz["bloques"], "palabras": []}
     total = anclas = 0
-    for bloque, tiempo in zip(guion.leer(carpeta), voz["bloques"]):
-        ini, fin = tiempo["inicio"], tiempo["fin"]
-        # Palabras de Whisper cuyo centro cae dentro de este bloque
-        del_bloque = [t for t in transcritas if ini - 0.15 <= (t["inicio"] + t["fin"]) / 2 <= fin + 0.15]
-        palabras = [dict(p, norm=guion.normalizar(p["texto"]), bloque=bloque["id"]) for p in bloque["palabras"]]
-        alinear_bloque(palabras, del_bloque, ini, fin)
+    bloques = {b["id"]: b for b in guion.leer(carpeta)}
+    # Se alinea frase por frase: la etapa de voz sabe exactamente dónde empieza y termina cada una,
+    # así ninguna palabra puede "saltar" por encima de una [pausa].
+    for tramo in voz["frases"]:
+        ini, fin = tramo["inicio"], tramo["fin"]
+        del_tramo = [t for t in transcritas if ini - 0.1 <= (t["inicio"] + t["fin"]) / 2 <= fin + 0.1]
+        palabras = [dict(p, norm=guion.normalizar(p["texto"]), bloque=tramo["bloque"])
+                    for p in bloques[tramo["bloque"]]["palabras"] if p["frase"] == tramo["frase"]]
+        alinear_bloque(palabras, del_tramo, ini, fin)
+        palabras[0]["inicio"] = ini  # la primera palabra arranca justo con la frase (dato exacto)
         total += len(palabras)
         anclas += sum(1 for p in palabras if p.get("ancla"))
         for p in palabras:
