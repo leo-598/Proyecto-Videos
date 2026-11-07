@@ -1,0 +1,21 @@
+# Diseño de escenas (lo dibuja el código; nada de imágenes externas)
+# Paleta: fondo #14161A, amarillo #FFC832, coral #E8505B, azul #2F6BFF, texto #F7F4EE
+# Zona segura: no poner nada importante en el 20 % inferior ni en el 15 % derecho (botones de las apps).
+formato: {ancho: 1080, alto: 1920, fps: 30}
+sello_serie: "¿POR QUÉ?"          # fijo arriba, Archivo Black, amarillo sobre carbón
+texto_fuentes: "Fuentes: Met Office · HyperPhysics (GSU) · ASU"   # pequeño, visible en B2–B5
+escenas:
+  - id: B1
+    visual: "Un arco de 7 bandas de color se dibuja de izquierda a derecha (trazo animado). Al decir 'círculo', el arco se completa hasta ser un círculo entero."
+    texto_grande: "¿Por qué es CURVO?"
+  - id: B2
+    visual: "Gota grande (círculo azul translúcido). Un rayo blanco entra, se dobla, rebota en la pared interna y sale abierto en abanico de 7 colores."
+  - id: B3
+    visual: "Muñeco simple (formas geométricas) de espaldas a un sol. Línea punteada del sol, pasando por la cabeza, hacia el frente. Cuña marcada '≈42°' entre esa línea y la dirección a una gota."
+  - id: B4
+    visual: "Alrededor del punto donde termina la línea punteada aparece un anillo de gotas que se ilumina en círculo. Luego aparecen dos muñecos lado a lado, cada uno con su propio arco de un tono ligeramente distinto."
+  - id: B5
+    visual: "Línea de suelo horizontal que corta el círculo; la mitad inferior se ve tenue. Un avión (icono simple) sube y el círculo se ve completo y brillante."
+  - id: B6
+    visual: "Tarjeta de cierre 2 s: 'ParchanCol' en Archivo Black y la frase 'Y ahora ya sabes, parce.' sobre carbón."
+ritmo: "Un cambio visual cada 1,5–2 s como mínimo (movimiento de cámara suave, aparición de elementos o zoom)."

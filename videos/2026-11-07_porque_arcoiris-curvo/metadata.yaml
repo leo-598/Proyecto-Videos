@@ -1,0 +1,12 @@
+id: 2026-11-07_porque_arcoiris-curvo
+pilar: P3
+serie: porque
+carril: base
+estado: guion_aprobado  # idea → guion_aprobado → voz → render → revisado → programado → publicado
+etiqueta_ia: revisar  # visuales gráficos (no realistas); voz sintética: declarar si la plataforma lo pregunta
+afiliados: []
+plataformas:
+  youtube:   {titulo: "", descripcion: ""}
+  tiktok:    {texto: ""}
+  instagram: {texto: ""}
+  facebook:  {texto: ""}

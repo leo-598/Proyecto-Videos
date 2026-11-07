@@ -1,0 +1,15 @@
+# Claves y entorno
+.env
+.venv/
+__pycache__/
+*.pyc
+
+# Pesos de modelos (se descargan solos)
+modelos/
+
+# Audios y videos generados
+videos/**/*.wav
+videos/**/*.mp4
+videos/**/visuales/
+videos/**/tiempos.json
+videos/**/subtitulos.ass
