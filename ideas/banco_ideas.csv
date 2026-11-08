@@ -1,0 +1,41 @@
+id,pilar,serie,idea,validacion,riesgo,estado,notas;
+"P1-01,P1,porque,¿Por qué decimos ""parce""?,si,bajo,idea,Origen del término"; evitar estereotipos
+P1-02,P1,porque,¿Por qué Bogotá queda a 2.600 metros de altura?,no,bajo,idea,;
+"P1-03,P1,mito_o_dato,""Colombia es el país con más especies de aves del mundo"",si,bajo,idea,Verificar con fuentes ornitológicas actuales";
+P1-04,P1,porque,¿Por qué el café colombiano es tan suave?,no,bajo,idea,;
+P1-05,P1,en_60s,El origen de la arepa,no,bajo,idea,Historia precolombina; cuidar afirmaciones de origen
+"P1-06,P1,mito_o_dato,""En Colombia el tinto es vino"",no,bajo,idea,Diferencias de lenguaje entre países";
+P1-07,P1,porque,¿Por qué Caño Cristales cambia de color?,si,bajo,idea,Planta acuática Macarenia clavigera;
+P1-08,P1,en_60s,Colombia tiene dos océanos: qué cambia eso,no,bajo,idea,;
+P1-09,P1,porque,¿Por qué a Medellín le dicen la ciudad de la eterna primavera?,no,bajo,idea,;
+"P1-10,P1,mito_o_dato,""El 20 de julio de 1810 Colombia se independizó"",no,bajo,idea,Grito vs. independencia definitiva (1819)";
+P2-01,P2,en_60s,Qué es realmente el 4x1000,si,medio,idea,Explicar sin recomendar productos;
+P2-02,P2,porque,¿Por qué sube el dólar y por qué te afecta?,no,medio,idea,Sin predicciones;
+"P2-03,P2,mito_o_dato,""Pagar solo el mínimo de la tarjeta está bien"",si,medio,idea,Educativo"; sin recomendar entidades
+P2-04,P2,en_60s,La inflación explicada con arepas,no,bajo,idea,;
+P2-05,P2,porque,¿Por qué los bancos cobran cuota de manejo?,no,medio,idea,Sin nombrar bancos;
+"P2-06,P2,mito_o_dato,""Si te suben el sueldo, pagas más impuesto por todo lo que ganas"",si,medio,idea,Tramos marginales"; verificar con DIAN
+P2-07,P2,en_60s,Qué es la UVT y por qué aparece en todo,no,medio,idea,Cifra cambia cada año;
+P2-08,P2,porque,¿Por qué el salario mínimo se negocia cada diciembre?,no,medio,idea,Neutral; sin postura política
+"P2-09,P2,mito_o_dato,""Guardar plata debajo del colchón no le hace perder valor"",no,bajo,idea,Inflación";
+P2-10,P2,en_60s,El interés compuesto explicado con una bola de nieve,no,bajo,idea,Sin recomendar inversiones;
+P3-01,P3,porque,¿Por qué el arcoíris es curvo?,si,bajo,mvp,Video MVP;
+P3-02,P3,porque,¿Por qué el cielo es azul?,si,bajo,idea,;
+"P3-03,P3,mito_o_dato,""Un rayo nunca cae dos veces en el mismo lugar"",si,bajo,idea,";
+P3-04,P3,en_60s,Cómo sabe el GPS dónde estás,no,bajo,idea,;
+P3-05,P3,porque,¿Por qué el mar es salado?,no,bajo,idea,;
+"P3-06,P3,mito_o_dato,""La Gran Muralla China se ve desde el espacio"",no,bajo,idea,";
+P3-07,P3,en_60s,Cómo funciona el wifi,no,bajo,idea,;
+P3-08,P3,porque,¿Por qué las rutas de avión se ven curvas en el mapa?,no,bajo,idea,;
+"P3-09,P3,mito_o_dato,""Solo usamos el 10 % del cerebro"",no,bajo,idea,Mito clásico"; sin consejos de salud
+P3-10,P3,porque,¿Por qué el hielo flota?,no,bajo,idea,;
+P4-01,P4,en_60s,La guerra que duró 38 minutos,si,medio,idea,Anglo-Zanzíbar 1896; sin imágenes violentas
+"P4-02,P4,mito_o_dato,""Cleopatra vivió más cerca del iPhone que de las grandes pirámides"",si,bajo,idea,";
+P4-03,P4,en_60s,El error que inventó el pósit,no,bajo,idea,;
+"P4-04,P4,mito_o_dato,""Los tiburones existen desde antes que los árboles"",si,bajo,idea,";
+P4-05,P4,porque,¿Por qué septiembre ya no es el mes siete?,no,bajo,idea,;
+P4-06,P4,en_60s,El año en que se borraron 10 días del calendario,no,bajo,idea,1582;
+"P4-07,P4,mito_o_dato,""Los vikingos usaban cascos con cuernos"",no,bajo,idea,";
+P4-08,P4,porque,¿Por qué Nueva York se llamó Nueva Ámsterdam?,no,bajo,idea,;
+P4-09,P4,en_60s,El error de unidades que destruyó una sonda de la NASA,no,bajo,idea,Mars Climate Orbiter 1999;
+"P4-10,P4,mito_o_dato,""Napoleón era bajito"",no,bajo,idea,";
